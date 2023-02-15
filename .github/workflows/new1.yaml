@@ -1,0 +1,27 @@
+name: new1 workflow
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+  
+jobs:
+  newbuild:
+    runs-on: ubuntu-latest
+    steps:
+      -uses: actions/checkout@v3
+      -name: Welcome User
+       run: echo welcome to Github actions
+       
+  newtest:
+    runs-on: ubuntu-latest
+    steps:
+      -uses: actions/checkout@v3
+      -name: Test User
+       run: echo Testing is successful
+       
+  newdeploy:
+    runs-on: ubuntu-latest
+    steps:
+      -uses: actions/checkout@v3
+      -name: Deploy User
+       run: echo Deployment is successful
