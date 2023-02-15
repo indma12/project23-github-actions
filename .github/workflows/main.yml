@@ -5,10 +5,10 @@ on:
   workflow_dispatch:
   
   jobs:
-    build:
+    build1:
       runs-on: ubuntu-latest
       steps:
-        -uses: actions/checkout@v3
-        -name: Welcome User
+        - uses: actions/checkout@v3
+        - name: Welcome User
           run: echo welcome to github actions
 
